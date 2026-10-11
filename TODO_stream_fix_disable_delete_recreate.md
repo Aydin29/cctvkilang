@@ -1,0 +1,6 @@
+- [ ] Edit `StreamConversionService::convertRtspToM3u8()` agar TIDAK menghapus `public/stream/{slug}` saat stream sudah berjalan / playlist sudah ada.
+- [ ] Tambahkan pengecekan `playlist.m3u8` keberadaannya dan ukuran > 0 sebagai indikator stream siap.
+- [ ] Saat playlist ada, jangan buat ulang `start_stream.bat` / jangan delete directory; hanya update `cctv.playlist_url`.
+- [ ] Saat playlist tidak ada, barulah delete directory & restart start_stream.bat.
+- [ ] Update/verify log agar bisa debug (ffmpeg_output.log / launcher_output.log).
+- [ ] Test: create/edit CCTV -> buka `cctvs.show` -> pastikan video muncul konsisten.
