@@ -13,3 +13,5 @@ yarn-error.log
 /.idea
 /.vscode
 /.fleet
+.ffmpeg_autostart_marker
+temp_query.sql
